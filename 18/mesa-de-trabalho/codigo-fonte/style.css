@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    margin: auto;
+    max-width: 960px;
+}
+
+.caixa {
+    background-color: gray;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 25px;
+    margin: 10px 0;
+}
+
+/* 
+    O código fonte da atividade começa 
+    a partir desse trecho... 
+*/
+
+.caixa.grow:hover{
+    transform:scale(1.2);
+    transition: all;
+    transition-duration: 1s;
+
+}
+.caixa.shrink:hover{
+    transform:scale(0.8);
+    transition: all;
+    transition-duration: 1s;
+
+}
+@keyframes pulse{
+    0%{}
+    25%{transform: scale(0.9);}
+    50%{transform: scale(1.1);}
+    75%{transform: scale(1);}
+    100%{}
+}
+.pulse:hover{
+    animation-name:pulse;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-grow{
+    0%{transform: scale(1);}
+    50%{}
+    100%{transform: scale(1.1);}
+}
+.pulse-grow:hover{
+    animation-name:pulse-grow;
+    animation-duration:700ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse-shrink{
+    0%{transform: scale(1);}
+    50%{}
+    100%{transform: scale(0.9);}
+}
+.pulse-shrink:hover{
+    animation-name:pulse-shrink;
+    animation-duration:700ms;
+    animation-iteration-count: infinite;
+}
+@keyframes push{
+    0%{transform: scale(1);}
+    50%{transform: scale(0.8);}
+    100%{}
+}
+.push:hover{
+    animation-name:push;
+    animation-duration:700ms;
+    animation-iteration-count:1s;
+}
+@keyframes pop{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{}
+}
+.pop:hover{
+    animation-name:pop;
+    animation-duration:700ms;
+    animation-iteration-count:1s;
+}
+@keyframes bounce-in{
+    0%{}
+    25%{transform: scale(1.1);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.1);}
+    100%{}
+}
+.bounce-in:hover{
+    animation-name:bounce-in;
+    animation-duration:700ms;
+    animation-iteration-count:1s;
+    transform: scale(1.1);
+}
+@keyframes bounce-out{
+    0%{transform: scale(0.9);}
+    25%{transform: scale(0.8);}
+    50%{transform: scale(0.9);}
+    100%{}
+}
+.bounce-out:hover{
+    animation-name:bounce-out;
+    animation-duration:700ms;
+    animation-iteration-count:1s;
+    transform: scale(0.8);
+
+}
+.rotate:hover{
+    transform: rotate(15deg);
+    transition: all;
+    transition-duration: 1s;
+
+}
+.grow-rotate:hover{
+    transform: rotate(15deg)scale(1.2);
+    transition: all;
+    transition-duration:1s;
+
+}
+.float:hover{
+    transform: translateY(-20px);
+    transition-duration: 600ms;
+    transition: all;
+
+}
+.sink:hover{
+    transform: translateY(20px);
+    transition-duration: 600ms;
+    transition: all;
+}
+.bob:hover{
+    transform: translateY(-20px);
+    transition-duration: 600ms;
+    transition: all;
+}
+
+
+
+
+
