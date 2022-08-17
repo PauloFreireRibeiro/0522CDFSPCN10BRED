@@ -1,11 +1,17 @@
+
 const Express = require('express');
 
-const Rotas = require('./routes/Professores');
+const ProfessoresRouter = require('./Routers/ProfessoresRouter');
+const AlunosRouter = require('./Routers/AlunosRouter');
+const MainViewRouter = require('./Routers/MainViewRouter');
 
 const Aplicativo = new Express();
 
 Aplicativo.use(Express.json());
 
-Aplicativo.use('/professores', Rotas);
+Aplicativo.use('/', MainViewRouter);
 
-Aplicativo.listen(5678, () => console.log('Servidor rodando!'));
+Aplicativo.use('/api', ProfessoresRouter);
+Aplicativo.use('/api', AlunosRouter);
+
+Aplicativo.listen(5678, () => console.log('servidor rodando!'));
