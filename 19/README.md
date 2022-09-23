@@ -1,22 +1,15 @@
-# Aula 19 - Node.js: Express
+# Digital House
 
-## `npm`
+## Aula 19 - Node.js: Introdução Express
 
-### `npm init`
+## Requisito
 
-### `npm install`
+-[ ] Node.js 14.x ou superior.
 
-Responsável por instalar 
+## Instalação
 
-> Vimos anteriormente que quando executamos o comando `npm install` são realizados download dos pacotes listados no documento `package.json`, sendo assim, é recomendado ignorar a pasta `node_modules/`.
+1. `npm install` para instalar todas as dependências.
 
-**`.gitignore`**
+## Atividade resolvida
 
-Crie um documento com nome de `.gitignore` e adicione o código-fonte a seguir:
-
-```
-node_modules/
-```
-
-### `npm uninstall`
-
+- [Código-fonte](./codigo-fonte)
